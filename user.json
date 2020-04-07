@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "user1",
+      "address": "RDS Main Arena, Merrion Rd, Ballsbridge, Dublin 4, D04 AK83, Ireland",
+      "latitude": "53.3257213",
+      "longitude": "-6.2318766"
+    },
+    {
+      "name": "user2",
+      "address": "Haddington Rd, Dublin, D04 E0C9, Ireland",
+      "latitude": "53.335506",
+      "longitude": "-6.2424899,17"
+    },
+    {
+      "name": "user3",
+      "address": "26 Bath Ave, Dublin 4, D04 X7P8, Ireland",
+      "latitude": "53.3374852",
+      "longitude": "-6.2343727"
+    },
+    {
+      "name": "user4",
+      "address": "Boulevard Jardin Zoologique, 13004 Marseille",
+      "latitude": "43.1422014",
+      "longitude": "5.7300754"
+    }
+  ]
+}
