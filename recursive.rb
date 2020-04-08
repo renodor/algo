@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'rspec/autorun'
+require 'rspec'
 
 def sum(num)
   num.zero? ? num : num + sum(num - 1)
