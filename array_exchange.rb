@@ -1,10 +1,18 @@
+# frozen_string_literal: true
+
 require 'rspec'
+
+# problem: https://www.codewars.com/kata/5353212e5ee40d4694001114/train/ruby
 
 class Array
   def exchange_with!(other_array)
-    # your code here
-    save = self.dup
-    self.replace(other_array.reverse)
+    # duplicate the current array and save it in a variable
+    save = dup
+
+    # replace current array by 'other_array' reversed
+    replace(other_array.reverse)
+
+    # replace 'other_array' by the current array (saved) reversed
     other_array.replace(save.reverse)
   end
 end

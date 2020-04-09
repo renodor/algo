@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
-require 'rspec/autorun'
+require 'rspec'
+
+# problem: Write a program that prints the numbers from 1 to x
+# But for multiples of three print 'Fizz' instead of the number
+# and for the multiples of five print 'Buzz' instead of the number
+# For numbers which are multiples of both three and five print 'FizzBuzz'.
 
 def fizzbuzz(number)
   (1..number).each do |num|
@@ -15,11 +20,6 @@ def fizzbuzz(number)
     end
   end
 end
-
-# def fizzbuzz2(n)
-#   (1..n).map  { |i| (a = "#{['fizz'][i % 5]}#{['buzz'][i % 3]}").empty? ? i : a }
-#         .each { |a| puts a }
-# end
 
 describe 'fizzbuzz' do
   it 'outputs the right data' do

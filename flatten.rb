@@ -1,12 +1,22 @@
 # frozen_string_literal: true
 
-require 'rspec/autorun'
+require 'rspec'
 
+# problem: Define a function that flattens an array of nested arrays
+# (without using the build-in #flatten ruby method)
+
+# flatten needs to be build with a second optional argument
 def flatten(arr, result = [])
   arr.each do |el|
+    # check if the element is itself an array
+    # (meaning the array is not flatten yet)
     if el.class == Array
+      # if yes, call the function again on this specific array
+      # saving the result (if it exist) as the second argument
       flatten(el, result)
     else
+      # if no, this specific array is flatten,
+      # so we can put the element in result
       result << el
     end
   end

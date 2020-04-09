@@ -1,17 +1,24 @@
 # frozen_string_literal: true
 
-require 'rspec/autorun'
+require 'rspec'
+
+# problem : write a function that takes a x, a number, as an argument
+# and return the x first fibonacci numbers
 
 def fibonacci_numbers(number)
+  # initialize sum and sum2 at 1
   sum = 1
   num2 = 1
 
+  # has we already have sum and sum2 we need to do the operation x - 2 times
   (number - 2).times do
+    # save the num2 value by assigning it to num1
     num1 = num2
+    # save num2 value by assigning it to sum
     num2 = sum
+    # add num1 to the sum
     sum += num1
   end
-
   sum
 end
 
@@ -28,6 +35,3 @@ describe 'fibonacci numbers' do
     expect(fibonacci_numbers(10)).to eq(55)
   end
 end
-
-
-

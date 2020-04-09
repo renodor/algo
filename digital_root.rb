@@ -1,6 +1,13 @@
+# frozen_string_literal: true
+
 require 'rspec'
 
+# problem: https://www.codewars.com/kata/541c8630095125aba6000c00/train/ruby
+
 def digital_root(num)
+  # check if num is made of only 1 digit (meaning its < 10)
+  # if yes returns it
+  # if no sum all its digits and call the function again
   num < 10 ? num : digital_root(num.digits.inject(:+))
 end
 
