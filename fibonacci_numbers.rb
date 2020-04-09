@@ -32,6 +32,10 @@ describe 'fibonacci numbers' do
   end
 
   it 'Find the 55th fibonacci number' do
-    expect(fibonacci_numbers(10)).to eq(55)
+    expect(fibonacci_numbers(55)).to eq(139583862445)
+  end
+
+  it 'Find the 100th fibonacci number' do
+    expect(fibonacci_numbers(100)).to eq(354224848179261915075)
   end
 end
