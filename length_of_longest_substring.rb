@@ -2,6 +2,8 @@
 
 require 'rspec'
 
+# problem: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
 def length_of_longest_substring(string)
   result = sub_string_size = 0
   hash = {}
