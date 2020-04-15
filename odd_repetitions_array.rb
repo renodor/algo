@@ -19,7 +19,7 @@ def odd_repetitions_array(arr)
   results
 end
 
-describe 'odd repetitions_array' do
+describe '#odd_repetitions_array' do
   it 'find odd numbers of time for [1,2,3]' do
     expect(odd_repetitions_array([1, 2, 3])).to eq([1, 2, 3])
   end

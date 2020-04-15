@@ -11,7 +11,7 @@ def digital_root(num)
   num < 10 ? num : digital_root(num.digits.inject(:+))
 end
 
-describe 'Digital root' do
+describe '#digital_root' do
   it 'return a number' do
     expect(digital_root(1).class).to eq(Integer)
   end

@@ -14,7 +14,7 @@ def reverse_odds(string)
   end
 end
 
-describe 'reverse_odds' do
+describe '#reverse_odds' do
   it "return 'hlloo wlred' for 'hello world' " do
     expect(reverse_odds('hello world')).to eq('hlloo wlred')
   end

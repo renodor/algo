@@ -20,29 +20,29 @@ def password_generator
   password.shuffle.join('')
 end
 
-describe 'password_generator' do
+describe '#password_generator' do
   it 'contain 8 characters minimum' do
-    expect(password_generator.size >= 8).to eq(true)
+    expect(password_generator.size >= 8).to be true
   end
 
   it 'contain at least 1 upcase character' do
-    expect(password_generator.match?(/[A-Z]+/)).to eq(true)
+    expect(password_generator.match?(/[A-Z]+/)).to be true
   end
 
   it 'contain at least 1 downcase character' do
-    expect(password_generator.match?(/[a-z]+/)).to eq(true)
+    expect(password_generator.match?(/[a-z]+/)).to be true
   end
 
   it 'contain at least 1 letter' do
-    expect(password_generator.match?(/\D+/)).to eq(true)
+    expect(password_generator.match?(/\D+/)).to be true
   end
 
   it 'contain at least 1 number' do
-    expect(password_generator.match?(/\d+/)).to eq(true)
+    expect(password_generator.match?(/\d+/)).to be true
   end
 
   it 'contain at least 1 special character' do
-    expect(password_generator.match?(/[\W+\_+]/)).to eq(true)
+    expect(password_generator.match?(/[\W+\_+]/)).to be true
   end
 
   it 'return a random password (100 times)' do
@@ -54,6 +54,6 @@ describe 'password_generator' do
       true
     end
 
-    expect(password_generator_random_test).to eq(true)
+    expect(password_generator_random_test).to be true
   end
 end

@@ -21,7 +21,7 @@ def fizzbuzz(number)
   end
 end
 
-describe 'fizzbuzz' do
+describe '#fizzbuzz' do
   it 'outputs the right data' do
     expect do
       fizzbuzz(10)

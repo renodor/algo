@@ -22,7 +22,7 @@ def fibonacci_numbers(number)
   sum
 end
 
-describe 'fibonacci numbers' do
+describe '#fibonacci_numbers' do
   it 'Find the 1 fibonacci number' do
     expect(fibonacci_numbers(1)).to eq(1)
   end

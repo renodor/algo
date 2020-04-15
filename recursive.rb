@@ -31,7 +31,7 @@ def test(num, operation)
   arr.inject(operation.to_sym)
 end
 
-describe 'Recursive sum' do
+describe '#sum' do
   it 'Return a number' do
     expect(sum(1).class).to eq(Integer)
   end
@@ -49,7 +49,7 @@ describe 'Recursive sum' do
   end
 end
 
-describe 'Recursive product' do
+describe '#product' do
   it 'Return a number' do
     expect(sum(1).class).to eq(Integer)
   end
@@ -67,7 +67,7 @@ describe 'Recursive product' do
   end
 end
 
-describe 'Recursive substract' do
+describe '#substract' do
   it 'must return a number' do
     expect(substract(1).class).to eq(Integer)
   end
@@ -85,7 +85,7 @@ describe 'Recursive substract' do
   end
 end
 
-describe 'Recursive divide' do
+describe '#divide' do
   it 'must return a number' do
     expect(divide(1).class).to eq(Integer)
   end

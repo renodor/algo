@@ -17,7 +17,7 @@ class Array
   end
 end
 
-describe 'Exchange array' do
+describe '#exchange_with!' do
   context 'With array1 = [1, 2, 3] and array2 = [a, b, c]'
   array1 = [1, 2, 3]
   array2 = %w[a b c]

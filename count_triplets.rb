@@ -33,7 +33,7 @@ def count_triplets(arr, ratio)
   count
 end
 
-describe 'count triplet' do
+describe '#count_triplets' do
   it 'return a number' do
     expect(count_triplets([1, 2, 3], 2).class).to eq(Integer)
   end

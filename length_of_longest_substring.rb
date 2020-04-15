@@ -49,7 +49,7 @@ def length_of_longest_substring(string)
   result
 end
 
-describe 'length of longest substring' do
+describe '#length_of_longest_substring' do
   it 'give 5 for abcdbef' do
     expect(length_of_longest_substring('abcdbef')).to eq(5)
   end

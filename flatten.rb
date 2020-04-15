@@ -25,7 +25,7 @@ end
 
 p flatten([[1, 2, 3, `%w(a b c)`], [4, 5, 6], [7, 8, 9]])
 
-describe 'flatten' do
+describe '#flatten' do
   it 'Return non nested array' do
     expect(flatten([1, 2, 3])).to eq([1, 2, 3])
   end

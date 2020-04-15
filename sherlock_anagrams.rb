@@ -32,7 +32,7 @@ def sherlock_anagrams(string)
   count
 end
 
-describe 'sherlock_anagrams' do
+describe '#sherlock_anagrams' do
   it 'return a number' do
     expect(sherlock_anagrams('abc').class).to eq(Integer)
   end
