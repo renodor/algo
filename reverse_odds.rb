@@ -1,5 +1,5 @@
 require 'rspec'
-# Write a ruby method that reverses the odd-indexed characters of a string in place (without making a copy). Do not use the built-in reverse methods or similar (write the code to move the characters yourself). Sample output:
+# Write a ruby method that reverses the odd-indexed characters of a string in place (without making a copy). Do not use the built-in reverse methods or similar (write the code to move the characters yourself)
 
 def reverse_odds(string)
   result = arr = string.chars

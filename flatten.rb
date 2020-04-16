@@ -23,7 +23,7 @@ def flatten(arr, result = [])
   result
 end
 
-p flatten([[1, 2, 3, `%w(a b c)`], [4, 5, 6], [7, 8, 9]])
+p flatten([[1, 2, 3, %w[a b c], [4, 5, 6], [7, 8, 9]]])
 
 describe '#flatten' do
   it 'Return non nested array' do
@@ -35,16 +35,12 @@ describe '#flatten' do
   end
 
   it 'Return nested nivel2' do
-    expect do
-      flatten([[1, 2, 3, `%w(a b c)`], [4, 5, 6]])
-        .to eq([1, 2, 3, 'a', 'b', 'c', 4, 5, 6])
-    end
+    expect(flatten([1, 2, 3, %w[a b c], [4, 5, 6]]))
+      .to eq([1, 2, 3, 'a', 'b', 'c', 4, 5, 6])
   end
 
   it 'Return nested nivel3' do
-    expect do
-      flatten([[1, 2, 3, ['a', `%w(X, Y, Z)`, 'b', 'c']], [4, 5, [6], 7]])
-        .to eq([1, 2, 3, 'a', 'X', 'Y', 'Z', 'b', 'c', 4, 5, 6, 7])
-    end
+    expect(flatten([[1, 2, 3, ['a', %w[X Y Z], 'b', 'c']], [4, 5, [6], 7]]))
+      .to eq([1, 2, 3, 'a', 'X', 'Y', 'Z', 'b', 'c', 4, 5, 6, 7])
   end
 end
