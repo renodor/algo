@@ -2,7 +2,7 @@
 
 require 'rspec'
 
-# problem: Write a methods using RECURSION that do the following:
+# problem: Write methods using RECURSION that do the following:
 # sum integers between a min and max value (included)
 # multiply integers between a min and max value (included)
 # substract integers between a min and max value (included)

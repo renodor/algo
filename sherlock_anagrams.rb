@@ -17,7 +17,7 @@ def sherlock_anagrams(string)
       # first loop will take only the first letter of the sliced array
       # second loop will take the two first letter of the sliced array etc...
       # each time sort the sub sliced array and join it to form an a sub string
-      # (it is essential to sort it to spot anagrams
+      # (it is essential to sort it to spot anagrams)
       # like that we have every substring possible from this sliced array
       sub_string = arr[i, j + 1].sort.join('')
       # add every possible sorted substring to the hash

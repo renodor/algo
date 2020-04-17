@@ -10,7 +10,7 @@ def fibonacci_numbers(number)
   sum = 1
   num2 = 1
 
-  # has we already have sum and sum2 we need to do the operation x - 2 times
+  # has we already have sum and num2 we need to do the operation x - 2 times
   (number - 2).times do
     # save the num2 value by assigning it to num1
     num1 = num2
