@@ -5,12 +5,10 @@ def password_generator
   special_characters = [*'!'..'/', *':'..'?']
   choice = [downcase_letters, upcase_letters, numbers, special_characters]
   password = []
-  j = 0
   # put at least 1 downcase letter, 1 upcase letter
   # 1 number & 1 special character in password
-  4.times do
-    password << choice[j].sample
-    j += 1
+  4.times do |n|
+    password << choice[n].sample
   end
 
   # then take each time a random element to complete password
