@@ -29,4 +29,3 @@ const smallestNotInArray = (array) => {
   }
 };
 
-console.log(smallestNotInArray([1, 2, 3]));

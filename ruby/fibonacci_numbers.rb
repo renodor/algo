@@ -2,7 +2,7 @@
 
 require 'rspec'
 
-# problem : write a function that takes a x, a number, as an argument
+# problem : write a function that takes x, a number, as an argument
 # and return the x first fibonacci numbers
 
 def fibonacci_numbers(number)
