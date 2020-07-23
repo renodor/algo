@@ -1,3 +1,5 @@
+require 'rspec'
+
 # Write a function:
 
 # def solution(a)
@@ -12,18 +14,13 @@
 
 # Write an efficient algorithm for the following assumptions:
 
-
 def smallest_not_in_array(array)
-  # write your code in Ruby 2.2
   sorted_array = array.sort
-  sorted_array.each_with_index do |num, i|
-    if num.positive? && i <= sorted_array.length - 1
-      if sorted_array[i + 1] != num + 1 && sorted_array[i + 1] != num
-        return num + 1
-      end
-    end
+
+  sorted_array.each_with_index do |number, i|
+    return number + 1 if number.positive? && number + 1 != sorted_array[i + 1] && number != sorted_array[i + 1]
   end
-  array[-1].positive? ? array[-1] + 1 : 1
+  1
 end
 
 describe '#solution' do
