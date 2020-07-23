@@ -52,3 +52,9 @@ describe '#array_rotation' do
     expect(array_rotation([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10)).to eq([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
   end
 end
+
+describe '#array_rotation' do
+  it 'should return [8, 9, 10, 1, 2, 3, 4, 5, 6, 7] for [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] rotated 3 times' do
+    expect(array_rotation([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3)).to eq([8, 9, 10, 1, 2, 3, 4, 5, 6, 7])
+  end
+end
