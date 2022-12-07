@@ -5,18 +5,12 @@ require 'rspec'
 # problem: Define a function that outputs the numbers
 # that appear an odd number of time in an array
 
-def odd_repetitions_array(arr)
-  # initialize a new hash with 0 as default value
-  numbers = Hash.new(0)
-  results = []
+def odd_repetitions_array(array)
+  count = Hash.new(0)
 
-  # Count each time a number appear in array by adding it to the hash
-  arr.each { |num| numbers[num] += 1 }
+  array.each { |num| count[num] += 1 }
 
-  # iterate over hash, add to result every odd number
-  numbers.each { |key, value| results << key if value.odd? }
-
-  results
+  count.keys.select { |key| count[key].odd? }
 end
 
 describe '#odd_repetitions_array' do
